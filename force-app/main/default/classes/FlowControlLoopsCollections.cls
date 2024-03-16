@@ -63,10 +63,18 @@ public with sharing class FlowControlLoopsCollections {
      * @return The maximum of the two numbers, or null if either number is null.
      */
     public static Integer findMax(Integer num1, Integer num2) {
-        // Initialize largestNum as null
-        Integer largestNum = null;
+        // Check if both numbers are equal
+    if (num1 == num2)) {
+        return num1; // or num2, since they are equal
+    }
+    // Check if either number is null
+    if (num1 == null || num2 == null) {
+        return null;
+    }
 
-        return null; // Replace null with the variable you used to store the result
+        // Initialize largestNum as null
+        Integer largestNum = Math.max(num1, nuum2);
+        return largestNum; // Replace null with the variable you used to store the result
     }
 
 
@@ -79,8 +87,16 @@ public with sharing class FlowControlLoopsCollections {
      * @return A string indicating whether the number is "Positive", "Negative", or "Zero", or null if the number is null.
      */
     public static String checkNumber(Integer a) {
-        return null; // Replace null with the variable you used to store the result
+        if (a == null) {
+            return null;
+        } else if (a > 0) {
+            return "Positive";
+        } else if (a < 0) {
+            return "Negative";
+        } else {
+        return "Zero"; // Replace null with the variable you used to store the result
     }
+}
 
     /**
      * Question 5
@@ -91,7 +107,17 @@ public with sharing class FlowControlLoopsCollections {
      * @return A string indicating whether the number is "Even" or "Odd", or null if the number is null.
      */
     public static String checkEvenOdd(Integer a) {
-        return null; // Replace null with the variable you used to store the result
+         // Check if the number is null
+    if (a == null) {
+        return null;
+    } else { 
+    if (Math.mod(a)2 == 0) {
+        result "Even";
+    } else {
+        result "Odd";
+        return "result";  // Replace null with the variable you used to store the result
+    }
+}
     }
 
     /**
@@ -102,8 +128,14 @@ public with sharing class FlowControlLoopsCollections {
      * @return A string indicating whether the input is "Empty", "Null", or "Contains Text".
      */
     public static String checkString(String a) {
-        return null; // Replace null with the variable you used to store the result
+        if (a == null) {
+            return "Null";
+        } else if (a.isEmpty()) {
+            return "Empty";
+        } else {
+            return "Contains Text"; // Replace null with the variable you used to store the result
     }
+}
 
     /**
      * Question 7
@@ -118,7 +150,19 @@ public with sharing class FlowControlLoopsCollections {
      * @return The grade for the given score.
      */
     public static String determineGrade(Integer score) {
-        return null; // Replace null with the variable you used to store the result
+        if (score == null) {
+            return null;
+        } else if (score >= 90) {
+            return "A";
+        } else if (score >= 80) {
+            return "B";
+        } else if (score >= 70) {
+            return "C";
+        } else if (score >= 60) {
+            return "D";
+        } else {
+            return "F";
+        } // Replace null with the variable you used to store the result
     }
 
 
@@ -130,14 +174,15 @@ public with sharing class FlowControlLoopsCollections {
      * @return The sum of all integers up to the limit.
      */
     public static Integer sumUpToLimit(Integer intLimit) {
-        /* 
-         for (){
-            
-         }
-        */
-
-        return null; // Replace null with the variable you used to store the result
+            // Loop through integers from 1 to the limit and add them to sum
+    for (Integer i = 1; i <= intLimit; i++) {
+        sum += i;
     }
+    
+    // Return the sum
+        return sum; // Replace null with the variable you used to store the result
+    }
+    */
 
     /**
      * Question 9
